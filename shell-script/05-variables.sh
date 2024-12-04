@@ -8,5 +8,3 @@ echo "Please enter your Password"
 
 read -s PASSWORD
 
-s
-
