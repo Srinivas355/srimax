@@ -11,4 +11,23 @@ VALIDATE(){
     then
         echo "ERROR:: $2....FAILED"
         exit1
+    else
+        echo "$2....SUCCESS"
+    fi 
 }
+
+if [ $ID -ne 0 ]
+then
+   echo "ERROR:: Please run this script with root access"
+   exit1
+else
+  echo "you are root user"
+fi
+
+yum install mysql -y
+
+VALIDATE
+
+yum install git -y
+
+VALIDATE
