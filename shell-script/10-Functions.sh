@@ -26,4 +26,4 @@ VALIDATE
 
 yum install git -y
 
-VALIDATE
+VALIDAT
